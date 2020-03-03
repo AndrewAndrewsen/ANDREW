@@ -1,11 +1,11 @@
+/* @jsx A.createElement */
+
+import A from './ANDREW.js';
 import app from './app.js';
 
-const component = () => {
-    const element = document.createElement('div');
 
-    element.innerHTML = app();
+const container = document.createElement("div");
+document.body.appendChild(container)
 
-    return element;
-}
-
-document.body.appendChild(component()); 
+const element = <h1>hej</h1>;
+A.render(element, container);
